@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <header class="header">
+        <h1 class="user">USER REGISTRATION</h1>
+
+        <button onclick="location.href='index.html' " class="btn">
+            <i style="font-size: 35px;" class="fa fa-home"></i>
+        </button>
+
+    </header>
+    <title>User Registration</title>
+    <style>
+        body {
+            background-image: url('white-background-with-wavy-lines-copy-space_23-2148822145.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        a:hover {
+            background-color: #530606;
+        }
+
+        .btn {
+            margin-bottom: -50px;
+            margin-top: 50px;
+            border-radius: 20px;
+            color: #a11f1f;
+            background-color: rgb(241, 237, 237);
+
+        }
+
+        .container {
+
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 110px rgb(0, 0, 0);
+        }
+
+
+        .user {
+            margin-left: 430px;
+        }
+
+        .header {
+            color: #fff;
+
+            margin-bottom: 100px;
+            max-width: 1300;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #a11f1f;
+
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-left: 20px;
+            margin-right: 50px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            
+            background-color: #a11f1f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .return_to_login {
+            background-color: #a11f1f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 30px;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #a11f1f;
+        }
+
+        a:hover {
+            background-color: #530606;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form action="process_registration.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" value="required" required>
+            </div>
+            <div class="form-group">
+                <label for="password"> Confirm Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+
+        <a class="return_to_login" href="index.html">click here to return on login page</a>
+
+    </div>
+    <footer>copyright &#169 ayush_kumar year-2023</footer>
+</body>
+
+</html>
